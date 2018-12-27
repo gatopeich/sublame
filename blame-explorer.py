@@ -139,7 +139,7 @@ class GatoViewListener(sublime_plugin.ViewEventListener):
                 if changed_line <= line and changed_line+size >= line:
                     # print (line,changed_line,size,repr(change))
                     # TODO: <a> – a callback can be specified via the API to handle clicks on anchor tags
-                    change = minihtml_escape(change).replace(' ','\u2000')
+                    change = minihtml_escape(change).replace('\t','    ').replace(' ','\u00A0')
                     change = re.sub(r'^.[^\s]*(\s+)$', r'<b style="border:1px solid orange;border-radius:2">\1</b>', change, flags=re.M)
                     change = re.sub(r'^(-.*)', r'<b style="color:red">\1</b>', change, flags=re.M)
                     change = re.sub(r'^(\+.*)', r'<b style="color:green">\1</b>', change, flags=re.M)
