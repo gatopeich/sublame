@@ -19,7 +19,7 @@ For the diff functionality to be more handy, combine with any of the plugins tha
 # Screenshots
 
 ## Blame functionality:
-![blame screenshot](sample - blame functionality.png)
+![blame screenshot](sample_blame.png)
 
 ## Diff functionality:
-![diff screenshot](sample - diff functionality.png)
+![diff screenshot](sample_diff.png)
